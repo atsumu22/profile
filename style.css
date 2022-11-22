@@ -10,19 +10,28 @@ body {
   background-attachment: fixed;
 }
 
-#mainvisual-keeper {
+.mainvisual-keeper {
   height: 100vh;
 }
 
+.mainvisual-keeper__text {
+  font-size: 80px;
+  color: white;
+  font-family: 'Kosugi Maru', sans-serif;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
 .container {
-  width: 900px;
+  width: 850px;
   margin: 0 auto;
 }
 
 .card {
   background-color:  #feffdf;
   padding: 40px;
-  box-shadow: 0px 10px 30px rgb(0 0 0 / 40%);
+  box-shadow: 0px 10px 80px rgb(0 0 0 / 60%);
   border-radius: 4px;
   margin: 20px 0px;
   text-align: center;
@@ -33,9 +42,10 @@ body {
   height: 200px;
   width: 200px;
   object-fit: cover;
+  border: solid 4px black;
 }
 
-.img-circle:hover{
+.enlarge:hover{
   scale: 1.25;
   transition: all 0.3s;
 }
@@ -44,17 +54,26 @@ body {
   margin-bottom: 40px;
 }
 
-.btn-blue {
-  background-color:  #668ba4;
-  color: white;
-  padding: 15px 20px;
-  border-radius: 4px;
+.btn-push {
+  position: relative;
+  display: inline-block;
+  background-color: #aad4b9;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 black;
+  transform: translate(-2.5px, -2.5px);
 }
 
-.btn-blue:hover {
-  background-color: black;
-  color: white;
+.btn-push:hover {
+  box-shadow: none;
+  transform: translate(2.5px, 2.5px);
 }
+
 
 h1 {
   color:  #668ba4;
@@ -76,6 +95,10 @@ h2 {
   font-weight: 500;
 }
 
+.font-red {
+  color: red;
+}
+
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
 }
@@ -90,20 +113,124 @@ h1, h2, h3 {
   padding-left: 0px;
 }
 
-.list-inline i {
+.btn-push i {
+  font-size: 60px;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.btn-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.card-inside {
+  padding: 10px 20px;
+  background-color: #feffdf;
+  margin: 0px 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 black;
+  border: 1px solid black;
+}
+
+#mainvisual {
+  position: relative;
+  height: 440px;
+}
+
+.img-transition {
+  height: 420px;
+  width: 670px;
+  object-fit: cover;
+  border: 1px solid black;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  display: inline-block;
+  opacity: 0;
+  animation-name: img-transition;
+  animation-duration: 15s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes img-transition {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.img-transition:nth-child(1) {
+  animation-delay: 0s;
+}
+.img-transition:nth-child(2) {
+  animation-delay: 5s;
+}
+.img-transition:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.fav-img {
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.mainvisual-footer {
+  height: 100vh;
+  position: relative;
+}
+
+.mainvisual-footer__text {
   font-size: 80px;
-  color:  #668ba4;
+  color: white;
+  font-family: 'Kosugi Maru', sans-serif;
+  position: absolute;
+  top: 55%;
+  right: -10%;
 }
-
-.list-inline i:hover {
-  color: black;
-}
-
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 650px;
+  }
+  .card-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-transition {
+    width: 500px;
+  }
+  .card-inside {
+    margin: 10px 0;
+  }
+  .mainvisual-footer__text {
+    font-size: 40px;
+  }
+  .mainvisual-keeper__text {
+    font-size: 40px;
   }
 }
 
@@ -112,11 +239,24 @@ h1, h2, h3 {
   .container {
     width: 500px;
   }
+  .img-transition {
+    width: 350px;
+  }
 }
 
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+  .btn-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-push {
+    margin: 10px 0px;
+  }
+  .img-transition {
+    width: 150px;
   }
 }

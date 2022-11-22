@@ -5,50 +5,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="https://yannklein.github.io/japan-pictograms/japan-pictograms.css">
   <link rel="stylesheet" href="style.css">
   <title>My Profile</title>
 </head>
 <body>
+  <div class="mainvisual-keeper">
+    <div class="mainvisual-keeper__text">
+      <p>こんにちは〜🌞</p>
+    </div>
+  </div>
   <div class="container">
-    <div id="mainvisual-keeper"></div>
     <div class="card" id="introduction">
       <h1><span class="jpic jpic-bebika"></span>Hello, I'm Junsuke<span class="jpic jpic-bebika"></span></h1>
-      <img src="images/profile.png" class="img-circle" alt="Junsuke Watanabe">
-      <p>I'm learning at <a href="https://www.lewagon.com/">Le Wagon</a><br><span class="jpic jpic-minato"></span>I'm enjoying my local life in Kobe<span class="jpic jpic-minato"></span></p>
-      <a href="#" class="btn-blue" target="_blank">Discover Le Wagon</a>
+      <img src="images/profile.png" class="img-circle enlarge" alt="Junsuke Watanabe">
+      <p>I'm learning at <a href="https://www.lewagon.com/" class="font-red">Le Wagon</a><br><span class="jpic jpic-minato"></span>I'm enjoying my local life in <strong class="font-red">KOBE</strong><span class="jpic jpic-minato"></span></p>
+      <div class="btn-flex">
+        <a href="https://github.com/atsumu22" class="btn-push" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        <a href="https://www.instagram.com/atsumu22/" class="btn-push" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/junsuke.watanabe.3/" class="btn-push" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+      </div>
     </div>
     <div class="card">
-      <h2>My town</h2>
-      <ul class="list-inline">
-        <li>photo 1</li>
-        <li>photo 2</li>
-        <li>photo 3</li>
-      </ul>
+      <h2>I'm currently living here... >> <strong class="font-red">SHIOYA</strong></h2>
+        <div class="card-inside">
+          <div id="mainvisual">
+            <img class="img-transition" src="images/shioya2.png" alt="shioya-1">
+            <img class="img-transition" src="images/shioya1.png" alt="shioya-2">
+            <img class="img-transition" src="images/shioya4.png" alt="shioya-3">
+          </div>
+        </div>
+      <a href="https://goo.gl/maps/UhjmWiWjYwVjiUUp8" class="btn-push" target="_blank">👉Google maps</a>
     </div>
     <div class="card">
       <h2>My favorite</h2>
-      <ul class="list-inline">
-        <li>J League</li>
-        <li>Local Food</li>
-        <li>Cooking</li>
+      <ul class="list-inline card-flex">
+        <li class="card-inside enlarge">
+          <img class="fav-img" src="images/jleague2.png" alt="cerezo">
+          J League
+        </li>
+        <li class="card-inside enlarge">
+          <img class="fav-img" src="images/localfood9.png" alt="nakahata">
+          Local Food
+        </li>
+        <li class="card-inside enlarge">
+          <img class="fav-img" src="images/cooking3.png" alt="limon chicken">
+          Cooking
+        </li>
       </ul>
     </div>
     <div class="card">
-      <h2>Follow me</h2>
-      <ul class="list-inline">
-        <li>
-          <a href="https://github.com/atsumu22" target="_blank">
-            <i class="fa-brands fa-square-github"></i>
-          </a>
+      <h2>My Project</h2>
+      <ul class="list-inline card-flex">
+        <li class="card-inside enlarge">
+          nothing
         </li>
-        <li>
-          <a href="https://www.instagram.com/atsumu22/" target="_blank">
-            <i class="fa-brands fa-square-instagram"></i>
-          </a>
+        <li class="card-inside enlarge">
+          created
+        </li>
+        <li class="card-inside enlarge">
+          yet
         </li>
       </ul>
-  </div>
+    </div>
+    <footer class="mainvisual-footer">
+      <div class="mainvisual-footer__text">
+        <p>ごきげんよう👋</p>
+      </div>
+    </footer>
 </body>
 </html>
