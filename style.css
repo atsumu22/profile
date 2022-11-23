@@ -1,5 +1,5 @@
 body {
-  background: #97cba9;
+  background:  #66aafd;
   color: #575F7D;
   font-family: 'Lora', serif;
   font-size: 17px;
@@ -113,7 +113,7 @@ h1, h2, h3 {
   padding-left: 0px;
 }
 
-.btn-push i {
+.btn-push > i {
   font-size: 60px;
 }
 
@@ -191,7 +191,7 @@ h1, h2, h3 {
 }
 
 .fav-img {
-  height: 300px;
+  height: 200px;
   width: 200px;
   object-fit: cover;
   border: 1px solid black;
@@ -213,6 +213,13 @@ h1, h2, h3 {
 
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
+  .mainvisual-keeper, .mainvisual-footer {
+    display: none;
+  }
+  body {
+    background-image: none;
+  }
+
   .container {
     width: 650px;
   }
@@ -256,7 +263,12 @@ h1, h2, h3 {
   .btn-push {
     margin: 10px 0px;
   }
+  #mainvisual {
+    height: 210px;
+  }
   .img-transition {
-    width: 150px;
+    width: 200px;
+    height: 200px;
+    left: -12px;
   }
 }
