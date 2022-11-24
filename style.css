@@ -156,24 +156,59 @@ h1, h2, h3 {
   display: inline-block;
   opacity: 0;
   animation-name: img-transition;
-  animation-duration: 15s;
-  animation-timing-function: ease;
+  animation-duration: 24s;
+  animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
   animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-fill-mode: none;
 }
 @keyframes img-transition {
   0% {
     opacity: 0;
   }
-  20% {
+  30% {
     opacity: 1;
   }
-  40% {
+  36% {
     opacity: 1;
   }
-  60% {
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.img-transition .first {
+  height: 420px;
+  width: 670px;
+  object-fit: cover;
+  border: 1px solid black;
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  display: inline-block;
+  opacity: 0;
+  animation-name: img-transition-first;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes img-transition-first {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  36% {
+    opacity: 1;
+  }
+  45% {
     opacity: 0;
   }
   100% {
@@ -184,10 +219,13 @@ h1, h2, h3 {
   animation-delay: 0s;
 }
 .img-transition:nth-child(2) {
-  animation-delay: 5s;
+  animation-delay: 6s;
 }
 .img-transition:nth-child(3) {
-  animation-delay: 10s;
+  animation-delay: 12s;
+}
+.img-transition:nth-child(4) {
+  animation-delay: 18s;
 }
 
 .fav-img {
