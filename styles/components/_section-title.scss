@@ -1,0 +1,16 @@
+.section-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  &:after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0099;
+  }
+}

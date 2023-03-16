@@ -1,0 +1,13 @@
+@use "components/navbar";
+@use "components/avatar";
+@use "components/main";
+@use "components/about";
+@use "components/fonts";
+@use "components/projects";
+@use "components/section-title";
+@use "components/footer.scss";
+@use "components/list-inline";
+
+body {
+  height: auto;
+}
