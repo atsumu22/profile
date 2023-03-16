@@ -1,0 +1,8 @@
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2px;
+  & > li {
+    display: inline;
+  }
+}
