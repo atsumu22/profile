@@ -1,0 +1,31 @@
+.skills-card {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.skills-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.skills-card ul {
+  margin-bottom: 20px;
+}
+
+.skills-card .list-inline img {
+  height: 50px;
+  width: auto;
+}
+
+.project-cards {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.favorite-cards {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+}
