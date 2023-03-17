@@ -6,7 +6,7 @@
   padding-bottom: 30px;
   &__text {
     & p {
-      font-size: 7px;
+      font-size: 10px;
       margin-bottom: 0;
       @include mq(md) {
         font-size: 16px;
@@ -38,6 +38,7 @@
       & > a {
         text-decoration: none;
         color: #ff0099;
+        font-size: 20px;
         & > i {
           @include mq(md) {
             font-size: 32px;

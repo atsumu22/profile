@@ -245,7 +245,7 @@ p {
   padding-bottom: 30px;
 }
 .footer__text p {
-  font-size: 7px;
+  font-size: 10px;
   margin-bottom: 0;
 }
 @media screen and (min-width: 600px) {
@@ -278,6 +278,7 @@ p {
 .footer__links > li > a {
   text-decoration: none;
   color: #ff0099;
+  font-size: 20px;
 }
 @media screen and (min-width: 600px) {
   .footer__links > li > a > i {
