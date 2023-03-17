@@ -1,3 +1,5 @@
+@use "../globals/" as *;
+
 .main {
   position: relative;
   display: flex;
@@ -13,6 +15,20 @@
     }
     & p {
       font-size: 10px;
+    }
+  }
+  @include mq(cf) {
+    flex-direction: row;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    &__text{
+      & h1 {
+        margin-bottom: 0;
+        font-size: 50px;
+      }
+      & p {
+        font-size: 18px;
+      }
     }
   }
 }

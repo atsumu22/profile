@@ -1,7 +1,12 @@
+@use "../globals/" as *;
+
 .section-title {
   text-align: center;
   position: relative;
   margin-bottom: 20px;
+  @include mq(md) {
+    margin-bottom: 30px;
+  }
   &:after {
     content: "";
     width: 100px;
@@ -12,5 +17,10 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: #ff0099;
+    @include mq(md) {
+      width: 150px;
+      height: 6px;
+      top: 40px;
+    }
   }
 }

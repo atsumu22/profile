@@ -9,9 +9,14 @@
 }
 
 .navbar__item__img {
-  width: 35px;
-  height: 35px;
-  background-color: #000;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 600px) {
+  .navbar__item__img {
+    width: 60px;
+    height: 60px;
+  }
 }
 .navbar__item__img > img {
   width: 100%;
@@ -46,6 +51,13 @@
      object-fit: cover;
   margin-right: 20px;
 }
+@media screen and (min-width: 767px) {
+  .avatar > img {
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+  }
+}
 
 .main {
   position: relative;
@@ -63,9 +75,28 @@
 .main__text p {
   font-size: 10px;
 }
+@media screen and (min-width: 767px) {
+  .main {
+    flex-direction: row;
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
+  .main__text h1 {
+    margin-bottom: 0;
+    font-size: 50px;
+  }
+  .main__text p {
+    font-size: 18px;
+  }
+}
 
 .about {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  .about {
+    margin-bottom: 140px;
+  }
 }
 
 h1 {
@@ -83,12 +114,49 @@ p {
   font-size: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  p {
+    font-size: 18px;
+  }
+}
 .projects {
   margin-bottom: 50px;
+}
+@media screen and (min-width: 600px) {
+  .projects .swiper {
+    display: none;
+  }
+}
+.projects .grid {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .projects .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projects .grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1%;
+  }
+}
+@media screen and (min-width: 600px) {
+  .projects {
+    margin-bottom: 140px;
+  }
 }
 .projects .card-project {
   margin-left: 12px;
   width: 90%;
+}
+@media screen and (min-width: 600px) {
+  .projects .card-project {
+    margin: 0 auto;
+  }
 }
 .projects .card-project__img {
   width: 100%;
@@ -96,8 +164,20 @@ p {
   background-color: gray;
   margin-bottom: 8px;
 }
-.projects .card-project__text > h4 {
+.projects .card-project__text {
+  padding: 0 10px 0 10px;
+}
+.projects .card-project__text__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projects .card-project__text__title > h4 {
   margin-bottom: 0;
+}
+.projects .card-project__text__title > a {
+  text-decoration: none;
+  color: #ff0099;
 }
 .projects .card-project__text > p {
   margin-bottom: 0;
@@ -105,11 +185,40 @@ p {
 .projects .card-project__text > ul {
   opacity: 0.6;
 }
+@media screen and (min-width: 600px) {
+  .projects .card-project__text > ul {
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .projects .card-project__text > ul > li > i {
+    font-size: 20px;
+  }
+}
+.projects .card-project__text__tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.projects .card-project__text__tags > ul > .tag {
+  color: #fff;
+  font-weight: bold;
+  background-color: #ff0099;
+  margin-right: 5px;
+  font-size: 10px;
+  padding: 4px 10px 4px 10px;
+  border-radius: 30px;
+}
 
 .section-title {
   text-align: center;
   position: relative;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 600px) {
+  .section-title {
+    margin-bottom: 30px;
+  }
 }
 .section-title:after {
   content: "";
@@ -122,6 +231,13 @@ p {
   transform: translateX(-50%);
   background-color: #ff0099;
 }
+@media screen and (min-width: 600px) {
+  .section-title:after {
+    width: 150px;
+    height: 6px;
+    top: 40px;
+  }
+}
 
 .footer {
   opacity: 0.6;
@@ -132,6 +248,11 @@ p {
   font-size: 7px;
   margin-bottom: 0;
 }
+@media screen and (min-width: 600px) {
+  .footer__text p {
+    font-size: 16px;
+  }
+}
 .footer__text p:first-child:after {
   content: "";
   display: inline-block;
@@ -140,6 +261,28 @@ p {
   background-color: #000;
   margin-left: 3px;
   margin-right: 3px;
+}
+@media screen and (min-width: 600px) {
+  .footer__text p:first-child:after {
+    width: 1px;
+    height: 16px;
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .footer__links > li {
+    margin-right: 10px;
+  }
+}
+.footer__links > li > a {
+  text-decoration: none;
+  color: #ff0099;
+}
+@media screen and (min-width: 600px) {
+  .footer__links > li > a > i {
+    font-size: 32px;
+  }
 }
 
 .list-inline {
