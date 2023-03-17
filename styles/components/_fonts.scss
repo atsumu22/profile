@@ -14,12 +14,16 @@ h2 {
 
 p {
   font-family: 'Noto Sans', sans-serif;
-  font-size: 10px;
+  font-size: 1.02rem;
 }
 
 
 @include mq(md) {
   p {
-    font-size: 18px;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
 }
