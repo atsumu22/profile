@@ -1,0 +1,42 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar {
+  &__item {
+    &__img {
+      width: 35px;
+      height: 35px;
+      background-color: #000;
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    &__hamburger {
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      & > span {
+        width: 35px;
+        height: 2px;
+        margin-bottom: 10px;
+        display: block;
+        position: relative;
+        background-color: #000;
+        transition: transform 0.3s ease-in-out;
+        &:first-child {
+          margin-top: 4.5px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

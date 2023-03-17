@@ -3,32 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Welcome to Junsuke's Portfolio page!!">
+  <meta name="theme-color" content="#fc0805" >
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/My logo.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="styles/vendors/css-reset.css">
+  <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css">
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="images/My logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Junsuke's Portfolio</title>
-  <meta name="description" content="this is Junsuke's profile page. 渡邊順祐のプロフィールページです。">
 </head>
   <body>
-    <section id="navbar">
+    <div class="nav">
+      <div class="container">
+        <div class="navbar__item d-flex justify-content-between mb-2 mt-2">
+          <div class="navbar__item__img">
+            <img src="images/My logo.png" alt="">
+          </div>
+          <div class="navbar__item__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="main">
+      <div class="avatar">
+        <img src="images/profile.png" alt="">
+      </div>
+      <div class="main__text">
+        <h1>Junsuke Watanabe</h1>
+        <p>Hello! I am a junior web developer.</p>
+      </div>
+    </div>
 
-    </section>
-    <section id="mainvisual">
+    <div class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quis eius sequi aliquam repudiandae deserunt voluptates debitis unde labore nesciunt, expedita dolorem nam fugit molestias alias quisquam laudantium, ipsum aliquid.</p>
+      </div>
+    </div>
 
-    </section>
-    <section id="about">
+    <div class="projects">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
 
-    </section>
-    <section id="projects">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
 
-    </section>
-    <section id="footer">
+            <div class="card-project">
+              <div class="card-project__img">
 
-    </section>
+              </div>
+              <div class="card-project__text">
+                <h4>SAMPOMPOM</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+                <ul class="list-inline">
+                  <li><i class="devicon-rails-plain"></i></li>
+                  <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+                  <li><i class="devicon-heroku-original"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-sass-original"></i></li>
+                  <li><i class="devicon-bootstrap-plain"></i></li>
+                </ul>
+                <div class="card-project__text__role">
+                  <p><strong>Team Role: </strong>Back-End Dev</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card-project">
+              <div class="card-project__img">
+
+              </div>
+              <div class="card-project__text">
+                <h4>Kumiken Co., Ltd.</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+                <ul class="list-inline">
+                  <li><i class="devicon-html5-plain-wordmark"></i></li>
+                  <li><i class="devicon-css3-plain-wordmark"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-sass-original"></i></li>
+                  <li><i class="devicon-bootstrap-plain"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card-project">
+              <div class="card-project__img">
+
+              </div>
+              <div class="card-project__text">
+                <h4>Kitchy</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+                <ul class="list-inline">
+                  <li><i class="devicon-rails-plain"></i></li>
+                  <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+                  <li><i class="devicon-heroku-original"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-sass-original"></i></li>
+                  <li><i class="devicon-bootstrap-plain"></i></li>
+                </ul>
+                <p><strong>Team Role: </strong>Front-End Dev</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card-project">
+              <div class="card-project__img">
+
+              </div>
+              <div class="card-project__text">
+                <h4>Watch List</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+                <ul class="list-inline">
+                  <li><i class="devicon-rails-plain"></i></li>
+                  <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+                  <li><i class="devicon-heroku-original"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-sass-original"></i></li>
+                  <li><i class="devicon-bootstrap-plain"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card-project">
+              <div class="card-project__img">
+
+              </div>
+              <div class="card-project__text">
+                <h4>Alcolog</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+                <ul class="list-inline">
+                  <li><i class="devicon-rails-plain"></i></li>
+                  <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+                  <li><i class="devicon-heroku-original"></i></li>
+                  <li><i class="devicon-javascript-plain"></i></li>
+                  <li><i class="devicon-sass-original"></i></li>
+                  <li><i class="devicon-bootstrap-plain"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="card-project">
+              <div class="card-project__img">
+
+              </div>
+              <div class="card-project__text">
+                <h4>Article for "Offshore vol.2"</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis unde animi dolorem excepturi natus enim ducimus reiciendis necessitatibus itaque perspiciatis. Tempora non quae dignissimos ex impedit, amet quaerat pariatur beatae!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <ul class="list-inline">
+          <li><i class="fa-brands fa-square-github"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-square-facebook"></i></li>
+          <li><i class="fa-brands fa-square-instagram"></i></li>
+        </ul>
+        <div class="footer__text d-flex justify-content-left">
+          <p>Junsuke Watanabe</p>
+          <p>w.atsumu27@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="/scripts/vendors/swiper-bundle.min.js"></script>
+  <script src="/scripts/lib/loader.js"></script>
+  <script src="/scripts/lib/swiper.js"></script>
+  <script src="/scripts/lib/hamburger-menu.js"></script>
+  <script src="/scripts/lib/btn-rotate.js"></script>
+  <script src="/scripts/lib/btn-text-convert.js"></script>
+  <script src="/scripts/lib/observer.js"></script>
+  <script src="/scripts/lib/cardtext-slide.js"></script>
+>>>>>>> a57c3ff867a22f34dfec832a64a323740a2340c9
 </html>

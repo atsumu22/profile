@@ -1,0 +1,24 @@
+.projects {
+  margin-bottom: 50px;
+  & .card-project {
+    margin-left: 12px;
+    width: 90%;
+    &__img {
+      width: 100%;
+      height: 200px;
+      background-color: gray;
+      margin-bottom: 8px;
+    }
+    &__text {
+      & > h4 {
+        margin-bottom: 0;
+      }
+      & > p {
+        margin-bottom: 0;
+      }
+      & > ul {
+        opacity: 0.6;
+      }
+    }
+  }
+}
