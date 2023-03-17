@@ -1,3 +1,5 @@
+@use "../globals/" as *;
+
 .footer {
   opacity: 0.6;
   margin-bottom: 30px;
@@ -6,6 +8,9 @@
     & p {
       font-size: 7px;
       margin-bottom: 0;
+      @include mq(md) {
+        font-size: 16px;
+      }
       &:first-child {
         &:after {
           content: "";
@@ -15,6 +20,28 @@
           background-color: #000;
           margin-left: 3px;
           margin-right: 3px;
+          @include mq(md) {
+            width: 1px;
+            height: 16px;
+            margin-left: 6px;
+            margin-right: 6px;
+          }
+        }
+      }
+    }
+  }
+  &__links {
+    & > li {
+      @include mq(md) {
+        margin-right: 10px;
+      }
+      & > a {
+        text-decoration: none;
+        color: #ff0099;
+        & > i {
+          @include mq(md) {
+            font-size: 32px;
+          }
         }
       }
     }
