@@ -95,7 +95,12 @@
 .main__text h1 {
   margin-top: 10px;
   margin-bottom: 0;
-  font-size: 2rem;
+  font-size: 38px;
+}
+@media screen and (min-width: 767px) {
+  .main__text h1 {
+    font-size: 2rem;
+  }
 }
 .main__text p {
   font-size: 1.05rem;
@@ -121,6 +126,15 @@
 @media screen and (min-width: 600px) {
   .about, .tech-stacks, .projects {
     margin-bottom: 80px;
+  }
+}
+
+.about p {
+  font-size: 0.95rem;
+}
+@media screen and (min-width: 600px) {
+  .about p {
+    font-size: 1rem;
   }
 }
 
@@ -250,11 +264,14 @@ p {
   margin-bottom: 20px;
 }
 .section-title > h2 {
-  font-size: 60px;
+  font-size: 38px;
 }
 @media screen and (min-width: 600px) {
   .section-title {
     margin-bottom: 30px;
+  }
+  .section-title > h2 {
+    font-size: 60px;
   }
 }
 .section-title:after {
@@ -341,8 +358,13 @@ p {
   margin: 12px 0px 20px 12px;
 }
 .tech-stacks__items__icons i {
-  font-size: 38px;
+  font-size: 30px;
   margin-right: 12px;
+}
+@media screen and (min-width: 600px) {
+  .tech-stacks__items__icons i {
+    font-size: 38px;
+  }
 }
 .tech-stacks__items__icons__top {
   display: flex;

@@ -1,3 +1,5 @@
+@use "../globals/" as *;
+
 .tech-stacks {
   &__items {
     padding: 16px 0px;
@@ -7,8 +9,11 @@
     &__icons {
       margin: 12px 0px 20px 12px;
       & i {
-        font-size: 38px;
+        font-size: 30px;
         margin-right: 12px;
+        @include mq(md) {
+          font-size: 38px;
+        }
       }
       &__top {
         display: flex;

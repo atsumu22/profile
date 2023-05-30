@@ -7,6 +7,15 @@
   }
 }
 
+.about {
+  & p {
+    font-size: 0.95rem;
+    @include mq(md) {
+      font-size: 1rem;
+    }
+  }
+}
+
 .tag-lewagon {
   font-weight: bold;
   background-color: #ff0099;
