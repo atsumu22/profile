@@ -11,15 +11,18 @@
 .navbar__item__img {
   width: 40px;
   height: 40px;
+  border-radius: 10px;
 }
 @media screen and (min-width: 600px) {
   .navbar__item__img {
     width: 60px;
     height: 60px;
+    border-radius: 10px;
   }
 }
 .navbar__item__img > img {
   width: 100%;
+  border-radius: 10px;
   height: auto;
 }
 .navbar__item__hamburger {
