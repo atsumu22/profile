@@ -1,0 +1,24 @@
+.tech-stacks {
+  &__items {
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    &__icons {
+      margin: 12px 0px 20px 12px;
+      & i {
+        font-size: 38px;
+        margin-right: 12px;
+      }
+      &__top {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 12px;
+      }
+      &__bottom {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}

@@ -30,9 +30,6 @@
     width: 90%;
     @include mq(md) {
       margin: 0 auto;
-      &:hover {
-        scale: 1.2;
-      }
     }
     &__img {
       width: 100%;
@@ -55,6 +52,7 @@
         }
       }
       & > p {
+        font-size: 0.95rem;
         margin-bottom: 0;
       }
       & > ul {

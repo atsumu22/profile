@@ -20,12 +20,14 @@
       <div class="container">
         <div class="navbar__item d-flex justify-content-between mb-2 mt-2">
           <div class="navbar__item__img">
-            <img src="images/My logo.png" alt="">
+            <a href="#">
+              <img src="images/My logo.png" alt="">
+            </a>
           </div>
-          <div class="lang-selector d-flex">
-            <p>Japanese</p>
+          <div class="navbar__item__lang-selector">
+            <p class="change-lang-jpn active">Japanese</p>
             <span></span>
-            <p>English</p>
+            <p class="change-lang-eng">English</p>
           </div>
         </div>
       </div>
@@ -46,18 +48,67 @@
         <div class="section-title">
           <h2>About</h2>
         </div>
-        <p>Hi There!👋 I'm a junior Full-Stack Web Developer living in Kobe.</p>
-        <p>I'm enjoying my local life with my family here.</p>
-        <p>In March 2023, I completed 25-week part-time coding bootcamp at <a href="https://www.lewagon.com/tokyo" class="tag-lewagon">Le Wagon Tokyo</a>.</p>
-        <p>This bootcamp was my first coding experience and made me crazy about coding!!!</p>
-        <p>Until then I was a sales representative in a Japanese machinary company and experienced 3-year in Osaka and 4-year in Hong Kong.</p>
-        <p>My hobbies are watching soccer match(mainly J-league)⚽️, cooking🍳, eating🤤, and sometimes writing📝.</p>
+        <p class="lang-en d-none">Hi There!👋 I'm a junior Full-Stack Web Developer living in Kobe.</p>
+        <p class="lang-en d-none">I'm enjoying my local life with my family here.</p>
+        <p class="lang-en d-none">In March 2023, I completed 25-week part-time coding bootcamp at <a href="https://www.lewagon.com/tokyo" class="tag-lewagon">Le Wagon Tokyo</a>.</p>
+        <p class="lang-en d-none">This bootcamp was my first coding experience and made me crazy about coding!!!</p>
+        <p class="lang-en d-none">Until then I was a sales representative in a Japanese machinary company and experienced 3-year in Osaka and 4-year in Hong Kong.</p>
+        <p class="lang-en d-none">My hobbies are watching soccer match(mainly J-league)⚽️, cooking🍳, eating🤤, and sometimes writing📝.</p>
+        <p class="lang-jp mb-0">こんにちは。渡邊順祐と申します。神戸在住、Webエンジニアをやっています。</p>
+        <p class="lang-jp">主にRuby on Railsを用いた開発に取り組んでいます。</p>
+        <p class="lang-jp">キャリアのスタートは機械メーカーの営業職でしたが、2022年に1年間のキャリアブレイクを設け、Webエンジニアへの転身の為、プログラミング学習を開始しました。現在はRailsとReactを組み合わせたWebアプリケーション開発に取り組んでいます。</p>
+        <p class="lang-jp">前職では、自身の目標でもあった海外赴任の機会をいただき、2018年より4年間、香港で生活していました。しかし、激化する民主化デモを目の当たりにし、コロナ禍での厳しい行動制限を受ける中、同時期に子育てが始まり、生活における大きな変化を立て続けに経験しました。</p>
+        <p class="lang-jp">それらが自分自身のキャリアと現地に同行するために休職してくれていた妻のキャリアを見直すきっかけとなり、個人としては「手に職をつけたい」と考えるようになったのが、エンジニアへの転身を志望した理由です。</p>
+        <p class="lang-jp">ローカルフード探訪と料理、そしてJリーグ観戦が趣味です。</p>
+      </div>
+    </div>
+
+    <div class="tech-stacks">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tech Stack</h2>
+        </div>
+
+          <div class="tech-stacks__items">
+            <h5 class="lang-jp">■言語 / ライブラリ</h5>
+            <h5 class="lang-en d-none">■Programming Languages / Library etc.</h5>
+            <div class="tech-stacks__items__icons">
+              <div class="tech-stacks__items__icons__top">
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-sass-original colored"></i>
+                <i class="devicon-ruby-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-typescript-plain colored"></i>
+              </div>
+              <div class="tech-stacks__items__icons__bottom">
+                <i class="devicon-rails-plain colored"></i>
+                <i class="devicon-react-original colored"></i>
+                <i class="devicon-bootstrap-plain colored"></i>
+              </div>
+            </div>
+            <p></p>
+            <h5 class="lang-jp">■その他</h5>
+            <h5 class="lang-en d-none">■Others</h5>
+            <div class="tech-stacks__items__icons">
+              <div class="tech-stacks__items__icons__top">
+                <i class="devicon-git-plain colored"></i>
+                <i class="devicon-github-original colored"></i>
+                <i class="devicon-figma-plain colored"></i>
+                <i class="devicon-postgresql-plain-wordmark colored"></i>
+                <i class="devicon-heroku-plain colored"></i>
+              </div>
+            </div>
+          </div>
+
       </div>
     </div>
 
     <div class="projects">
-      <div class="section-title">
-        <h2>Projects</h2>
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+        </div>
       </div>
 
       <!-- Slider main container -->
@@ -243,6 +294,34 @@
        <div class="grid">
           <div class="card-project">
             <div class="card-project__img">
+              <img src="images/Projects - work in progress.png" alt="">
+            </div>
+            <div class="card-project__text">
+              <div class="card-project__text__title">
+                <h4>Library Passbook</h4>
+              </div>
+              <div class="card-project__text__tags">
+                <ul class="list-inline">
+                  <li class="tag">App</li>
+                  <li class="tag">Coding</li>
+                </ul>
+              </div>
+              <p class="lang-en d-none">An app for tracking your Reading Log with "money". You can enjoy keeping your reading log like saving up money.</p>
+              <p class="lang-jp">読書記録を”お金”に換算するアプリケーションです。企画から開発まで全工程を個人で進めています。Railsをベースに要所でReactコンポーネントを扱いながら開発を進めています。6月中旬までにデプロイを予定しています。</p>
+              <ul class="list-inline">
+                <li><i class="devicon-rails-plain"></i></li>
+                <li><i class="devicon-react-original"></i></li>
+                <li><i class="devicon-postgresql-plain-wordmark"></i></li>
+                <li><i class="devicon-heroku-original"></i></li>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-sass-original"></i></li>
+                <li><i class="devicon-bootstrap-plain"></i></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card-project">
+            <div class="card-project__img">
               <img src="images/Projects - SAMPOMPOM.png" alt="">
             </div>
             <div class="card-project__text">
@@ -256,7 +335,8 @@
                   <li class="tag">Coding</li>
                 </ul>
               </div>
-              <p><strong>Team Role: </strong>Back-End Dev<br>An app for stamp rally generator to help support local shopping streets. This is our final project at Le Wagon Tokyo.</p>
+              <p class="lang-en d-none"><strong>Team Role: </strong>Back-End Dev<br>An app for stamp rally generator to help support local shopping streets. This is our final project at Le Wagon Tokyo.</p>
+              <p class="lang-jp"><strong>Team Role: </strong>Back-End Dev<br>2023年3月まで参加したコーディングブートキャンプ、LeWagonのメンバーでチーム開発を行ったWebアプリケーションです。「消えゆくジモトの商店街を盛り上げる」をコンセプトに、スタンプラリーイベントの開催を容易にするサービスです。</p>
               <ul class="list-inline">
                 <li><i class="devicon-rails-plain"></i></li>
                 <li><i class="devicon-postgresql-plain-wordmark"></i></li>
@@ -284,7 +364,8 @@
                   <li class="tag">Design</li>
                 </ul>
               </div>
-              <p>Kumi Ken is a commercial kitchen contractor in Hong Kong ,which has long experienced.  I worked on every step from planning, designing to coding.</p>
+              <p class="lang-en d-none">Kumi Ken is a commercial kitchen contractor in Hong Kong ,which has long experienced.  I worked on every step from planning, designing to coding.</p>
+              <p class="lang-jp">Kumi Ken Co., Ltd.は香港に拠点をおく厨房設備設計・施工会社です。Webサイトの企画からデザイン、コーディングまでを担当しました。</p>
               <ul class="list-inline">
                 <li><i class="devicon-html5-plain-wordmark"></i></li>
                 <li><i class="devicon-css3-plain-wordmark"></i></li>
@@ -306,11 +387,12 @@
               </div>
               <div class="card-project__text__tags">
                 <ul class="list-inline">
-                  <li class="tag">Web</li>
+                  <li class="tag">App</li>
                   <li class="tag">Coding</li>
                 </ul>
               </div>
-              <p><strong>Team Role: </strong>Front-End Dev<br>A marketplace app for connecting those who want to know how to cook local dishes and tell them. This is one of team-work projects at Le Wagon Tokyo. </p>
+              <p class="lang-en d-none"><strong>Team Role: </strong>Front-End Dev<br>A marketplace app for connecting those who want to know how to cook local dishes and tell them. This is one of team-work projects at Le Wagon Tokyo. </p>
+              <p class="lang-jp"><strong>Team Role: </strong>Front-End Dev<br>2023年3月まで参加したコーディングブートキャンプ、LeWagonのメンバーでチーム開発を行いました。「”ローカルに”料理を学びたい人、教えたい人をつなぐ」マーケットプレイス型のアプリケーションです。</p>
               <ul class="list-inline">
                 <li><i class="devicon-rails-plain"></i></li>
                 <li><i class="devicon-postgresql-plain-wordmark"></i></li>
@@ -333,37 +415,12 @@
               </div>
               <div class="card-project__text__tags">
                 <ul class="list-inline">
-                  <li class="tag">Web</li>
+                  <li class="tag">App</li>
                   <li class="tag">Coding</li>
                 </ul>
               </div>
-              <p>An app for tracking favorites movies. This is my first rails app, which I created in Le Wagon Tokyo.</p>
-              <ul class="list-inline">
-                <li><i class="devicon-rails-plain"></i></li>
-                <li><i class="devicon-postgresql-plain-wordmark"></i></li>
-                <li><i class="devicon-heroku-original"></i></li>
-                <li><i class="devicon-javascript-plain"></i></li>
-                <li><i class="devicon-sass-original"></i></li>
-                <li><i class="devicon-bootstrap-plain"></i></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card-project">
-            <div class="card-project__img">
-              <img src="images/Projects - work in progress.png" alt="">
-            </div>
-            <div class="card-project__text">
-              <div class="card-project__text__title">
-                <h4>Alcolog</h4>
-              </div>
-              <div class="card-project__text__tags">
-                <ul class="list-inline">
-                  <li class="tag">Web</li>
-                  <li class="tag">Coding</li>
-                </ul>
-              </div>
-              <p>An app for recording SAKE with your memories. It is still in under progress...</p>
+              <p class="lang-en d-none">An app for tracking favorites movies. This is my first rails app, which I created in Le Wagon Tokyo.</p>
+              <p class="lang-jp">自身初のRailsアプリケーションです。お気に入りの映画をリスト化し、記録するアプリケーションです。各リストにレビューを付けられる機能も実装しました。</p>
               <ul class="list-inline">
                 <li><i class="devicon-rails-plain"></i></li>
                 <li><i class="devicon-postgresql-plain-wordmark"></i></li>
@@ -381,7 +438,8 @@
             </div>
             <div class="card-project__text">
               <div class="card-project__text__title">
-                <h4>"Offshore vol.2"</h4>
+                <h4 class="lang-en d-none">"Offshore vol.2"</h4>
+                <h4 class="lang-jp">"オフショア vol.2"</h4>
                 <a href="https://offshore-mcc.net/news/1340/"><i class="fa-solid fa-link"></i></a>
               </div>
               <div class="card-project__text__tags">
@@ -389,7 +447,8 @@
                   <li class="tag">Article</li>
                 </ul>
               </div>
-              <p>Literary magazine. I contributed an article about my life of parenting in Hong Kong.</p>
+              <p class="lang-en d-none">Literary magazine. I contributed an article about my life of parenting in Hong Kong.</p>
+              <p class="lang-jp">”アジアを読む文芸誌”、オフショアの第二号に、香港駐在時の子育ての記録をエッセイとして寄稿いたしました。</p>
             </div>
           </div>
         </div>
@@ -425,4 +484,5 @@
   <script src="/scripts/lib/btn-text-convert.js"></script>
   <script src="/scripts/lib/observer.js"></script>
   <script src="/scripts/lib/cardtext-slide.js"></script>
+  <script src="/scripts/lib/change-lang.js"></script>
 </html>
