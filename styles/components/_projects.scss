@@ -3,13 +3,13 @@
 .projects {
   margin-bottom: 50px;
   & .swiper {
-    @include mq(md) {
+    @include mq(lg) {
       display: none;
     }
   }
   & .grid {
     display: none;
-    @include mq(md) {
+    @include mq(lg) {
       display: grid;
       grid-template-columns: 50% 50%;
       gap: 1%;
